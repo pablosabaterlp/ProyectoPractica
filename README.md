@@ -62,7 +62,8 @@ Flowchart:
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
-## Para Usar el Programa
+## Demo
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/505b96f94100560c1c3a6264817779b764c5df8c/FaceRecognitionAzure/Extra/demo.gif)
 
 ## Referencias
 * [Guias de Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
