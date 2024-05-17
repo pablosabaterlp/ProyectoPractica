@@ -63,7 +63,7 @@ Flowchart:
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
 ## Demo
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/ffaff35eb07d07bdf7010be77ad22962302fb16a/FaceRecognitionAzure/Extra/demo.gif)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/866d609e9bd3f5f5792336910f7601ea52951a56/FaceRecognitionAzure/Extra/demo.gif)
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
