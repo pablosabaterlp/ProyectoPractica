@@ -63,7 +63,14 @@ Flowchart:
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
 ## Demo
+
+Reconocimiento en Fotos (15/5/24)
+
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/866d609e9bd3f5f5792336910f7601ea52951a56/FaceRecognitionAzure/Extra/demo.gif)
+
+Reconocimiento En Video (16/5/24)
+
+
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
