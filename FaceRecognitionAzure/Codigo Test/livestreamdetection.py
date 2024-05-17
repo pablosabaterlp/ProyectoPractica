@@ -73,7 +73,6 @@ pygame.display.set_caption('Webcam Live Stream with Face Detection')
 # Define desired FPS
 desired_fps = 30
 
-
 # Start the frame processing thread
 thread = threading.Thread(target=process_frame)
 thread.start()
@@ -90,10 +89,6 @@ while running:
 
     # Resize frame to desired resolution
     frame = cv2.resize(frame, desired_resolution)
-
-    # Draw bounding boxes on the frame
-    for (l, t, w, h) in face_boxes:
-        pygame.draw.rect(window, (0, 0, 255), (l, t, w, h), 2)
 
     # Convert the frame to a format pygame can use
     frame_surface = pygame.image.frombuffer(frame.tobytes(), desired_resolution, 'RGB')
