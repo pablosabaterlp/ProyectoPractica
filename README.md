@@ -53,9 +53,9 @@ Flowchart:
 | ------------- | ------------- |
 | Reconocer Caras en Foto | 13/5/24 -> 15/5/24 |
 | Reconocer Caras en Video | 15/5/24 -> 16/5/24 |
-| Detectar puestos en una oficina usando mask | 17/5/24 -> 21/5/24 |
-| Detectar puestos ocupados usando reconocimiento de caras| 22/5/24 -> 27/5/24 |
-| EXTRA: Añadir aspecto reconocimiento facial | 27/5/24 -> 1/5/24 |
+| Entrenar modelo para detectar puestos de trabajo | 17/5/24 -> 20/5/24 |
+| Crear codigo para detectar puestos ocupados usando modelo | 17/5/24 -> 22/5/24 |
+| EXTRA: Añadir aspecto reconocimiento facial | 22/5/24 -> 27/5/24 |
 | Implementar utilización del blob storage | 2/6/24 -> 5/6/24 |
 | Implementar Cosmos DB, function, etc. | 5/6/24 -> 12/6/24 |
 | Testing y Optimización | 13/6/24 -> 19/6/24 |
