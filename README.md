@@ -72,11 +72,12 @@ Reconocimiento en Video (16/5/24)
 
 
 ## Iteraciones de Entrenamiento
-Iteracion 1 - Foto de oficina casi vacia (20/5/24)
+Iteracion 1 - Foto de oficina casi vacia y resultados de entrenamiento (20/5/24)
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/bde28e7c1f6d53ce78eca150dbe9d973b60bdd22/FaceRecognitionAzure/Extra/EntrenamientoTest4%20-%20Oficina.png)
-
-Iteracion 3 - Misma foto, más entrenamiento (20/5/24)
 ![]()
+
+Iteracion 3 - Misma foto y resultados de entrenamiento (20/5/24)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/3cee4988938afeac8cac580c38dabbfb0551dfd7/FaceRecognitionAzure/Extra/Captura%20de%20pantalla%202024-05-20%20131357.png)
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
 ## Referencias
