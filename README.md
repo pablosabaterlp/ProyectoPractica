@@ -43,7 +43,7 @@ Proceso:
 5. Los puestos se represetan visualmente usando Power BI como disponibles u ocupados
 
 Flowchart:
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/505b96f94100560c1c3a6264817779b764c5df8c/FaceRecognitionAzure/Extra/dise%C3%B1o2.png)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/20b36552864391166153449884c0ee686716a502/FaceRecognitionAzure/Extra/Dise%C3%B1o2%20(2).png)
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
