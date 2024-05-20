@@ -78,7 +78,7 @@ Iteracion 1 - Foto de oficina casi vacia y resultados de entrenamiento (20/5/24)
 
 Iteracion 3 - Misma foto y resultados de entrenamiento (20/5/24)
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/3cee4988938afeac8cac580c38dabbfb0551dfd7/FaceRecognitionAzure/Extra/Captura%20de%20pantalla%202024-05-20%20131357.png)
-![]()
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/0b9151d6a4e7e64c19ae3b6dfc2250d94fb207fe/FaceRecognitionAzure/Extra/TestOficina2.png)
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
 ## Referencias
