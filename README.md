@@ -68,9 +68,10 @@ Reconocimiento en Fotos (15/5/24)
 
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/866d609e9bd3f5f5792336910f7601ea52951a56/FaceRecognitionAzure/Extra/demo.gif)
 
-Reconocimiento En Video (16/5/24)
+Reconocimiento en Video (16/5/24)
 
-
+Entrenamiento de Oficina (20/5/24)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/bde28e7c1f6d53ce78eca150dbe9d973b60bdd22/FaceRecognitionAzure/Extra/EntrenamientoTest4%20-%20Oficina.png)
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
