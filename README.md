@@ -70,9 +70,13 @@ Reconocimiento en Fotos (15/5/24)
 
 Reconocimiento en Video (16/5/24)
 
-Entrenamiento de Oficina (20/5/24)
+
+## Iteraciones de Entrenamiento
+Iteracion 1 - Foto de oficina casi vacia (20/5/24)
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/bde28e7c1f6d53ce78eca150dbe9d973b60bdd22/FaceRecognitionAzure/Extra/EntrenamientoTest4%20-%20Oficina.png)
 
+Iteracion 3 - Misma foto, más entrenamiento (20/5/24)
+![]()
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
 ## Referencias
