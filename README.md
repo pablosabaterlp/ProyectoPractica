@@ -73,12 +73,12 @@ Reconocimiento en Video (16/5/24)
 
 ## Iteraciones de Entrenamiento
 ### Iteracion 1 - Foto de oficina casi vacia y resultados de entrenamiento (20/5/24)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/bde28e7c1f6d53ce78eca150dbe9d973b60bdd22/FaceRecognitionAzure/Extra/EntrenamientoTest4%20-%20Oficina.png =250x250)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/ab9f93f33710ec95cf37bd0d9d0811cbed83c61b/FaceRecognitionAzure/Extra/EntrenamientoIter1.png =250x250)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/bde28e7c1f6d53ce78eca150dbe9d973b60bdd22/FaceRecognitionAzure/Extra/EntrenamientoTest4%20-%20Oficina.png)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/ab9f93f33710ec95cf37bd0d9d0811cbed83c61b/FaceRecognitionAzure/Extra/EntrenamientoIter1.png)
 
 ### Iteracion 3 - Misma foto y resultados de entrenamiento (20/5/24)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/3cee4988938afeac8cac580c38dabbfb0551dfd7/FaceRecognitionAzure/Extra/Captura%20de%20pantalla%202024-05-20%20131357.png =250x250)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/0b9151d6a4e7e64c19ae3b6dfc2250d94fb207fe/FaceRecognitionAzure/Extra/TestOficina2.png =250x250)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/3cee4988938afeac8cac580c38dabbfb0551dfd7/FaceRecognitionAzure/Extra/Captura%20de%20pantalla%202024-05-20%20131357.png)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/0b9151d6a4e7e64c19ae3b6dfc2250d94fb207fe/FaceRecognitionAzure/Extra/TestOficina2.png)
 
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
