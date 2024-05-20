@@ -40,7 +40,7 @@ Proceso:
 2. El blob storage provoca una function de Azure
 3. La funcion llama a un contenedor con el API de Custom Vision y Face para obtener información sobre la persona y decir el numero de puestos disponibles y donde se ubican
 4. Los datos se envian a un Cosmos DB
-5. Los puestos se represetan visualmente usando Power BI como disponibles u ocupados
+5. Los puestos se represetan visualmente usando Azure Maps como disponibles u ocupados
 
 Flowchart:
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/20b36552864391166153449884c0ee686716a502/FaceRecognitionAzure/Extra/Dise%C3%B1o2%20(2).png)
@@ -56,7 +56,7 @@ Flowchart:
 | Entrenar modelo para detectar puestos de trabajo | 17/5/24 -> 20/5/24 |
 | Crear codigo para detectar puestos ocupados usando modelo | 17/5/24 -> 22/5/24 |
 | EXTRA: Añadir aspecto reconocimiento facial | 22/5/24 -> 27/5/24 |
-| Implementar utilización del blob storage | 2/6/24 -> 5/6/24 |
+| Implementar utilización del blob storage y Azure Maps | 2/6/24 -> 5/6/24 |
 | Implementar Cosmos DB, function, etc. | 5/6/24 -> 12/6/24 |
 | Testing y Optimización | 13/6/24 -> 19/6/24 |
 
