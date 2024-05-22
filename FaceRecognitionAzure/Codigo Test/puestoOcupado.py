@@ -1,35 +1,71 @@
-from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
 from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
-from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateBatch, ImageFileCreateEntry, Region
+from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
 from msrest.authentication import ApiKeyCredentials
 import os, time, uuid, requests, cv2
 
-training_key = os.environ.get('VISION_TRAINING_KEY') dc04ada586134feaa1fdaa543c592fdd
-training_endpoint = os.environ.get('VISION_TRAINING_ENDPOINT') https://chls1zu1cvbpocaaicrit001.cognitiveservices.azure.com/
-prediction_key = os.environ.get('VISION_PREDICTION_KEY') f97fa93036b5479da5f70f31150d6f0d
-prediction_endpoint = os.environ.get('VISION_PREDICTION_ENDPOINT') https://chls1zu1cvbpocaaicrit001-prediction.cognitiveservices.azure.com/
-resource_id = os.environ.get('VISION_PREDICTION_RESOURCE_ID') /subscriptions/a86b8252-af12-4a18-a3aa-171e87725305/resourceGroups/chls1zu1rsgpocaaicrit001/providers/Microsoft.CognitiveServices/accounts/chls1zu1cvbpocaaicrit001-Prediction
-ad3068fd-6464-4f6c-a02f-890a94d96707
+training_key ='dc04ada586134feaa1fdaa543c592fdd'
+training_endpoint ='https://chls1zu1cvbpocaaicrit001.cognitiveservices.azure.com/'
+prediction_key = 'f97fa93036b5479da5f70f31150d6f0d'
+prediction_endpoint = 'https://chls1zu1cvbpocaaicrit001-prediction.cognitiveservices.azure.com/'
+project_id = 'a86b8252-af12-4a18-a3aa-171e87725305'
+publish_iteration_name = "Iteration1"
+
 # Now there is a trained endpoint that can be used to make a prediction
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
 predictor = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
 
-# Open the sample image and get back the prediction results.
-with open(os.path.join (base_image_location, "test", "test_image.jpg"), mode="rb") as picture:
-    results = predictor.detect_image(project.id, publish_iteration_name, test_data)
+# Function to analyze the image
+def analyze_image(image_path):
+    with open(image_path, "rb") as test_data:
+        # Get the prediction results
+        results = predictor.detect_image(project_id, publish_iteration_name, test_data)
 
-occupiedlist = []
-occupiedprobtotal = 0
-unoccupiedlist = []
-unoccupiedprobtotal = 0
-# Display the results.    
-for prediction in results.predictions:
-    if prediction.tag_name == "Occupied":
-        occupiedlist.append(prediction)
-        occupiedprobtotal += prediction.probability
-    elif prediction.tage_name == "Unoccupied":
-        unoccupiedlist.append(prediction)
-        unoccupiedprobtotal += prediction.probability
-    print("\t" + prediction.tag_name + ": {0:.2f}% bbox.left = {1:.2f}, bbox.top = {2:.2f}, bbox.width = {3:.2f}, bbox.height = {4:.2f} \n".format(prediction.probability * 100, prediction.bounding_box.left, prediction.bounding_box.top, prediction.bounding_box.width, prediction.bounding_box.height))
+    occupied_list = []
+    occupied_prob_total = 0
+    unoccupied_list = []
+    unoccupied_prob_total = 0
 
-print("# of Occupied Spots:" + len(occupiedlist) + "\n Probability:" + occupiedprobtotal/len(occupiedlist) + "\n # of Unoccupied Spots:" + len(unoccupiedlist) + "\n Probability:" + unoccupiedprobtotal/len(unoccupiedlist))
+    # Display the results
+    for prediction in results.predictions:
+        if prediction.tag_name == "Occupied":
+            occupied_list.append(prediction)
+            occupied_prob_total += prediction.probability
+        elif prediction.tag_name == "Unoccupied":
+            unoccupied_list.append(prediction)
+            unoccupied_prob_total += prediction.probability
+        print(f"\t{prediction.tag_name}: {prediction.probability * 100:.2f}% "
+              f"bbox.left = {prediction.bounding_box.left:.2f}, "
+              f"bbox.top = {prediction.bounding_box.top:.2f}, "
+              f"bbox.width = {prediction.bounding_box.width:.2f}, "
+              f"bbox.height = {prediction.bounding_box.height:.2f}")
+
+    occupied_count = len(occupied_list)
+    unoccupied_count = len(unoccupied_list)
+
+    print(f"# of Occupied Spots: {occupied_count}")
+    if occupied_count > 0:
+        occupied_avg_prob = occupied_prob_total / occupied_count
+        print(f"Average Occupied Probability: {occupied_avg_prob:.2f}")
+    else:
+        occupied_avg_prob = 0
+        print("No occupied spots detected.")
+
+    print(f"# of Unoccupied Spots: {unoccupied_count}")
+    if unoccupied_count > 0:
+        unoccupied_avg_prob = unoccupied_prob_total / unoccupied_count
+        print(f"Average Unoccupied Probability: {unoccupied_avg_prob:.2f}")
+    else:
+        unoccupied_avg_prob = 0
+        print("No unoccupied spots detected.")
+
+    return {
+        "occupied_count": occupied_count,
+        "unoccupied_count": unoccupied_count,
+        "occupied_avg_prob": occupied_avg_prob,
+        "unoccupied_avg_prob": unoccupied_avg_prob
+    }
+
+# Example usage
+image_path = r'C:\Users\psaba\Downloads\infsoft-occupancy-workspaces.jpg' # Replace with your image path
+results = analyze_image(image_path)
+print(results)
