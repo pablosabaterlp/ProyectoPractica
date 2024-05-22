@@ -6,8 +6,8 @@ import cv2
 import os
 
 # Azure Computer Vision API setup
-subscription_key = os.environ.get('VISION_KEY')
-endpoint = os.environ.get('VISION_ENDPOINT')
+subscription_key = os.environ.get('VISION_KEY') 0385f2679cf84185bd35aa1a1df40db4
+endpoint = os.environ.get('VISION_ENDPOINT') https://chls1zu1acvpocaaicrit001.cognitiveservices.azure.com/
 api_url = f"{endpoint}/vision/v3.2/analyze"
 
 # Initialize global variables
