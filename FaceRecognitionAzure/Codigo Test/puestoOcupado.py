@@ -4,11 +4,11 @@ from azure.cognitiveservices.vision.customvision.training.models import ImageFil
 from msrest.authentication import ApiKeyCredentials
 import os, time, uuid, requests, cv2
 
-training_key = os.environ.get('VISION_TRAINING_KEY')
-training_endpoint = os.environ.get('VISION_TRAINING_ENDPOINT')
-prediction_key = os.environ.get('VISION_PREDICTION_KEY')
-prediction_endpoint = os.environ.get('VISION_PREDICTION_ENDPOINT')
-resource_id = os.environ.get('VISION_PREDICTION_RESOURCE_ID')
+training_key = os.environ.get('VISION_TRAINING_KEY') dc04ada586134feaa1fdaa543c592fdd
+training_endpoint = os.environ.get('VISION_TRAINING_ENDPOINT') https://chls1zu1cvbpocaaicrit001.cognitiveservices.azure.com/
+prediction_key = os.environ.get('VISION_PREDICTION_KEY') f97fa93036b5479da5f70f31150d6f0d
+prediction_endpoint = os.environ.get('VISION_PREDICTION_ENDPOINT') https://chls1zu1cvbpocaaicrit001-prediction.cognitiveservices.azure.com/
+resource_id = os.environ.get('VISION_PREDICTION_RESOURCE_ID') /subscriptions/a86b8252-af12-4a18-a3aa-171e87725305/resourceGroups/chls1zu1rsgpocaaicrit001/providers/Microsoft.CognitiveServices/accounts/chls1zu1cvbpocaaicrit001-Prediction
 
 # Now there is a trained endpoint that can be used to make a prediction
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
