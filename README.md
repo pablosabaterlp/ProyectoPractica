@@ -26,7 +26,7 @@ Como componentes se utilizaran los siguentes:
    - Blob Storage
    - Function
    - Cosmos DB
-6. Power BI para el mapa de calor
+6. Azure Maps para visualizar
 7. Camera
 8. Fotos de Entrenamiento
    - Caras
