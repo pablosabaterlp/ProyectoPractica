@@ -14,10 +14,13 @@ prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": predict
 predict = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
 
 # Function to analyze the image
-def analyze_image(image_url):
-    response = requests.get(image_url)
+def analyze_image(file_path):
+    response = requests.get(file_path)
     response.raise_for_status()
     image_data = response.content
+
+    #with open(file_path, "rb") as f:
+        #image_data = f.read()
 
     results = predict.detect_image(project_id, publish_iteration_name, image_data)
 
@@ -25,6 +28,7 @@ def analyze_image(image_url):
     occupied_prob_total = 0
     unoccupied_list = []
     unoccupied_prob_total = 0
+    total_spots = 0
 
     # Display the results
     for prediction in results.predictions:
@@ -36,6 +40,9 @@ def analyze_image(image_url):
             if prediction.probability > 0.8:
                 unoccupied_list.append(prediction)
                 unoccupied_prob_total += prediction.probability
+        elif prediction.tag_name == "Chair":
+            if prediction.probability > 0.9:
+                total_spots += 1
         #if prediction.probability > 0.8:
             #print(f"\t{prediction.tag_name}: {prediction.probability * 100:.2f}% "
                 #f"bbox.left = {prediction.bounding_box.left:.2f}, "
@@ -45,7 +52,7 @@ def analyze_image(image_url):
 
     occupied_count = len(occupied_list)
     unoccupied_count = len(unoccupied_list)
-
+    print(f"# of Spaces: {total_spots}")
     print(f"# of Occupied Spots: {occupied_count}")
     if occupied_count > 0:
         occupied_avg_prob = occupied_prob_total / occupied_count * 100
@@ -71,4 +78,5 @@ def analyze_image(image_url):
 
 # Example usage
 image_url = 'https://www.infsoft.com/wp-content/uploads/infsoft-occupancy-workspaces.jpg' # Replace with your image url
+file_path = '/Users/pablosabater/Downloads/IMG_5443.jpeg'
 results = analyze_image(image_url)
