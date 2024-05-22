@@ -12,7 +12,7 @@ Los entregables principales son los siguentes:
    - Nombre
    - Edad
    - Etc.
-4. Crear mapa de calor del espacio
+3. ~~Crear mapa de calor del espacio~~
 
 ## Arquitectura
 
@@ -51,10 +51,10 @@ Flowchart:
 
 |    Tema       | Tiempo |
 | ------------- | ------------- |
-| Reconocer Caras en Foto | 13/5/24 -> 15/5/24 |
-| Reconocer Caras en Video | 15/5/24 -> 16/5/24 |
-| Entrenar modelo para detectar puestos de trabajo | 17/5/24 -> 20/5/24 |
-| Crear codigo para detectar puestos ocupados usando modelo | 17/5/24 -> 22/5/24 |
+| Reconocer Caras en Foto | ~~13/5/24 -> 15/5/24~~ |
+| Reconocer Caras en Video | ~~15/5/24 -> 16/5/24~~ |
+| Entrenar modelo para detectar puestos de trabajo | ~~17/5/24 -> 20/5/24~~ |
+| Crear codigo para detectar puestos ocupados usando modelo | ~~17/5/24 -> 22/5/24~~ |
 | Implementar utilización del blob storage y function | **22/5/24 -> 27/5/24** |
 | Visualizar en Azure Maps| **27/6/24 -> 7/6/24** |
 | EXTRA: Añadir aspecto reconocimiento facial | **Indeterminado** |
