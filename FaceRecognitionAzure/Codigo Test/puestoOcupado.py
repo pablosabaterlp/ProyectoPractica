@@ -9,7 +9,7 @@ training_endpoint = os.environ.get('VISION_TRAINING_ENDPOINT') https://chls1zu1c
 prediction_key = os.environ.get('VISION_PREDICTION_KEY') f97fa93036b5479da5f70f31150d6f0d
 prediction_endpoint = os.environ.get('VISION_PREDICTION_ENDPOINT') https://chls1zu1cvbpocaaicrit001-prediction.cognitiveservices.azure.com/
 resource_id = os.environ.get('VISION_PREDICTION_RESOURCE_ID') /subscriptions/a86b8252-af12-4a18-a3aa-171e87725305/resourceGroups/chls1zu1rsgpocaaicrit001/providers/Microsoft.CognitiveServices/accounts/chls1zu1cvbpocaaicrit001-Prediction
-
+ad3068fd-6464-4f6c-a02f-890a94d96707
 # Now there is a trained endpoint that can be used to make a prediction
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
 predictor = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
