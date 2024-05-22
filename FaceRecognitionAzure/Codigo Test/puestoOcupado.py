@@ -1,24 +1,23 @@
 from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
-from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
 from msrest.authentication import ApiKeyCredentials
 import os, time, uuid, requests, cv2
 
-training_key ='dc04ada586134feaa1fdaa543c592fdd'
-training_endpoint ='https://chls1zu1cvbpocaaicrit001.cognitiveservices.azure.com/'
 prediction_key = 'f97fa93036b5479da5f70f31150d6f0d'
 prediction_endpoint = 'https://chls1zu1cvbpocaaicrit001-prediction.cognitiveservices.azure.com/'
 project_id = 'a86b8252-af12-4a18-a3aa-171e87725305'
-publish_iteration_name = "Iteration1"
+publish_iteration_name = 'Iteration3'
 
 # Now there is a trained endpoint that can be used to make a prediction
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
-predictor = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
+predict = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
 
 # Function to analyze the image
-def analyze_image(image_path):
-    with open(image_path, "rb") as test_data:
-        # Get the prediction results
-        results = predictor.detect_image(project_id, publish_iteration_name, test_data)
+def analyze_image(image_url):
+    response = requests.get(image_url)
+    response.raise_for_status()
+    image_data = response.content
+
+    results = predict.detect_image(project_id, publish_iteration_name, image_data)
 
     occupied_list = []
     occupied_prob_total = 0
@@ -66,6 +65,6 @@ def analyze_image(image_path):
     }
 
 # Example usage
-image_path = r'C:\Users\psaba\Downloads\infsoft-occupancy-workspaces.jpg' # Replace with your image path
-results = analyze_image(image_path)
+image_url = 'https://www.infsoft.com/wp-content/uploads/infsoft-occupancy-workspaces.jpg' # Replace with your image url
+results = analyze_image(image_url)
 print(results)
