@@ -2,11 +2,11 @@ from azure.cognitiveservices.vision.customvision.prediction import CustomVisionP
 from msrest.authentication import ApiKeyCredentials
 import os, time, uuid, requests, cv2
 
-training_key ='dc04ada586134feaa1fdaa543c592fdd'
-training_endpoint ='https://chls1zu1cvbpocaaicrit001.cognitiveservices.azure.com/'
-prediction_key = 'f97fa93036b5479da5f70f31150d6f0d'
-prediction_endpoint = 'https://chls1zu1cvbpocaaicrit001-prediction.cognitiveservices.azure.com/'
-project_id = '7459c025-eac8-4078-ab8a-5407dee1987f'
+training_key ='key'
+training_endpoint ='endpoint'
+prediction_key = 'key'
+prediction_endpoint = 'endpoint'
+project_id = 'id'
 publish_iteration_name = 'Iteration3'
 
 # Now there is a trained endpoint that can be used to make a prediction
