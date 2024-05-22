@@ -4,7 +4,7 @@ import os, time, uuid, requests, cv2
 
 prediction_key = 'f97fa93036b5479da5f70f31150d6f0d'
 prediction_endpoint = 'https://chls1zu1cvbpocaaicrit001-prediction.cognitiveservices.azure.com/'
-project_id = 'a86b8252-af12-4a18-a3aa-171e87725305'
+project_id = '7459c025-eac8-4078-ab8a-5407dee1987f'
 publish_iteration_name = 'Iteration3'
 
 # Now there is a trained endpoint that can be used to make a prediction
