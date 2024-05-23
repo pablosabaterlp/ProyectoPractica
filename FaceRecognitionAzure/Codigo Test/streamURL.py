@@ -4,7 +4,7 @@ import cv2
 app = Flask(__name__)
 
 camera = cv2.VideoCapture(0)
-DefaultEndpointsProtocol=https;AccountName=chls1zu1stapocaaicrit001;AccountKey=/BedihAGA1pvMxv8MGVPpumEt0YQKxHPVtZPO7j9vm68h0JGGmBtKE/EbqWbjqaSZ5e0z+kbqtrL+AStW+==;EndpointSuffix=core.windows.net
+
 def generateFrame():
     while True:
         success, frame = camera.read()
