@@ -43,7 +43,7 @@ Proceso:
 5. Los puestos se represetan visualmente usando Azure Maps como disponibles u ocupados
 
 Flowchart:
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/20b36552864391166153449884c0ee686716a502/FaceRecognitionAzure/Extra/Dise%C3%B1o2%20(2).png)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/be25ad011c5d4850bce849d54d9449f228f9ae7b/FaceRecognitionAzure/Extra/diagramapractica.drawio.png)
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
