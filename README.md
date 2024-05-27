@@ -36,11 +36,11 @@ Como componentes se utilizaran los siguentes:
 
 ## Diseño
 Proceso:
-1. Si se detecta una persona, la cámara toma una foto (JPEG, PNG, o BMP) y la sube un Azure Stack Hub Blob Storage
+1. Cada 5 minutos, la cámara toma una foto (JPEG, PNG) y la sube un Azure Blob Storage directamente
 2. El blob storage provoca una function de Azure
-3. La funcion llama a un contenedor con el API de Custom Vision y Face para obtener información sobre la persona y decir el numero de puestos disponibles y donde se ubican
-4. Los datos se envian a un Cosmos DB
-5. Los puestos se represetan visualmente usando Azure Maps como disponibles u ocupados
+3. La funcion llama a un contenedor con el API de Custom Vision y Face para obtener información sobre la persona y los puestos ocupados y desocupados
+4. Los datos se envian a un Cosmos DB y el estado de los puestos se actualiza en un excel
+5. Los puestos se represetan visualmente usando Power BI y el excel subido a un Sharepoint
 
 Flowchart:
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/be25ad011c5d4850bce849d54d9449f228f9ae7b/FaceRecognitionAzure/Extra/diagramapractica.drawio.png)
@@ -58,7 +58,7 @@ Flowchart:
 | Implementar utilización del blob storage y function | ~~22/5/24 -> 27/5/24~~ |
 | Visualizar en Power BI| **27/6/24 -> 7/6/24** |
 | EXTRA: Añadir aspecto reconocimiento facial | **Indeterminado** |
-| Testing y Optimización | **13/6/24 -> 17/6/24** |
+| Testing y Entrenamiento | **13/6/24 -> 17/6/24** |
 | Presentación | **17/6/24 -> 19/6/24** |
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
