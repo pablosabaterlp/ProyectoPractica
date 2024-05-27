@@ -96,6 +96,13 @@ Para representar los resultados del programa Custom Vision, se eligio usar un ma
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
+
+# Plan 28/5/24:
+* implement function
+* Fix upload and download functions for blob storage
+* check if face api is up
+* Test code and troubleshoot
+
 ## Referencias
 * [Guias de Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
 * [Guia de Azure Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python)
