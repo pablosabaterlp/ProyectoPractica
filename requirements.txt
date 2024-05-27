@@ -3,3 +3,10 @@
 # Manually managing azure-functions-worker may cause unexpected issues
 
 azure-functions
+msrest.authentication
+numpy
+pandas
+requests
+opencv-python
+azure.storage.blob
+azure.cognitiveservices
