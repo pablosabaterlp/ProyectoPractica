@@ -69,21 +69,30 @@ Reconocimiento en Fotos (15/5/24)
 
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/866d609e9bd3f5f5792336910f7601ea52951a56/FaceRecognitionAzure/Extra/demo.gif)
 
-Reconocimiento en Video (16/5/24)
+Mapa de Oficina (27/5/24
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/c7ccb23e826f95186ccb5b2da5cfe84e92964530/FaceRecognitionAzure/Extra/Mapa%20de%20Oficina.png)
 
+## Como Utilizar
+### Instalación
+El programa utiliza las siguentes librerias:
+* azure-functions
+* msrest.authentication
+* numpy
+* requests
+* opencv-python
+* azure.storage.blob
+* azure.cognitiveservices
+* scikit-learn
+Estas se encuentran en el documento 'requirements.txt', y para installar se puedo copiar lo siguente al terminal:
+ ```sh
+   pip install -r requirements.txt
+   ```
+Aparte de las librerias, los documentos de 'captureAndUpload.py', 'read_line.py', '', y '', son importantes para la instalación. Sirve tambien copiar los contenidos al documento principal 'function_app.py', pero estan por separados para simplificar el entendimiento.
 
-## Iteraciones de Entrenamiento
-### Iteracion 1 - Foto de oficina casi vacia y resultados de entrenamiento (20/5/24)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/ab9f93f33710ec95cf37bd0d9d0811cbed83c61b/FaceRecognitionAzure/Extra/EntrenamientoIter1.png)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/bde28e7c1f6d53ce78eca150dbe9d973b60bdd22/FaceRecognitionAzure/Extra/EntrenamientoTest4%20-%20Oficina.png)
+El Azure Function del cual este programa depende se creo utilizando Azure Core Tools, el cual se puede installar en el dispositivo sea necesario siguiendo este [link](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python). Por último, para usar las funciones de Azure se requiere una llave y endpoint para cada uno. El codigo de 'read_line.py' facilita la implementacion de estas llaves de forma que esten guardadas localmente en un documento .txt.
 
-
-
-### Iteracion 3 - Misma foto y resultados de entrenamiento (20/5/24)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/3cee4988938afeac8cac580c38dabbfb0551dfd7/FaceRecognitionAzure/Extra/Captura%20de%20pantalla%202024-05-20%20131357.png)
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/0b9151d6a4e7e64c19ae3b6dfc2250d94fb207fe/FaceRecognitionAzure/Extra/TestOficina2.png)
-
-
+### Implementación Power BI
+Para representar los resultados del programa Custom Vision, se eligio usar un mapa de Power BI y Synoptic Design. Este mapa se diseña manualmente y usando Synoptic Design es posible representar data de un archivo Excel. Como se puede ver en el demo de Power BI arriba, el programa sube los resultados del API Custom Vision a un Excel como occupados o libres en base de 0 o 1 (0 es libre). El mapa entonces representa un puesto en verde o rojo dependiendo de la información en el Excel.  
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 ## Referencias
