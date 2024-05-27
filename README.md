@@ -83,11 +83,11 @@ El programa utiliza las siguentes librerias:
 * azure.storage.blob
 * azure.cognitiveservices
 * scikit-learn
-Estas se encuentran en el documento 'requirements.txt', y para installar se puedo copiar lo siguente al terminal:
+Estas se encuentran en el documento `requirements.txt`, y para installar se puedo copiar lo siguente al terminal:
  ```sh
    pip install -r requirements.txt
    ```
-Aparte de las librerias, los documentos de 'captureAndUpload.py', 'read_line.py', '', y '', son importantes para la instalación. Sirve tambien copiar los contenidos al documento principal 'function_app.py', pero estan por separados para simplificar el entendimiento.
+Aparte de las librerias, los documentos de `captureAndUpload.py`, `read_line.py`, ``, y ``, son importantes para la instalación. Sirve tambien copiar los contenidos al documento principal `function_app.py`, pero estan por separados para simplificar el entendimiento.
 
 El Azure Function del cual este programa depende se creo utilizando Azure Core Tools, el cual se puede installar en el dispositivo sea necesario siguiendo este [link](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python). Por último, para usar las funciones de Azure se requiere una llave y endpoint para cada uno. El codigo de 'read_line.py' facilita la implementacion de estas llaves de forma que esten guardadas localmente en un documento .txt.
 
@@ -97,6 +97,8 @@ Para representar los resultados del programa Custom Vision, se eligio usar un ma
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 ## Referencias
 * [Guias de Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
+* [Guia de Azure Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python)
+* [Floor Plan para Power BI](https://www.youtube.com/watch?v=18UJYvl_c8s)
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
