@@ -95,6 +95,7 @@ El Azure Function del cual este programa depende se creo utilizando Azure Core T
 Para representar los resultados del programa Custom Vision, se eligio usar un mapa de Power BI y Synoptic Design. Este mapa se diseña manualmente y usando Synoptic Design es posible representar data de un archivo Excel. Como se puede ver en el demo de Power BI arriba, el programa sube los resultados del API Custom Vision a un Excel como occupados o libres en base de 0 o 1 (0 es libre). El mapa entonces representa un puesto en verde o rojo dependiendo de la información en el Excel.  
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
+
 ## Referencias
 * [Guias de Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
 * [Guia de Azure Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python)
