@@ -1,4 +1,4 @@
-import cv2, io, time
+import cv2, io, time, openpyxl
 import numpy as np
 from azure.storage.blob import BlobClient, BlobServiceClient, ContainerClient
 from read_line import read_line
@@ -49,9 +49,10 @@ def getmostrecentblob():
     lastTime = datetime.min.replace(tzinfo=timezone.utc)
 
     for blob in blob_list:
-        if blob.last_modified > lastTime:
-            lastBlob = blob
-            lastTime = blob.last_modified
+        if blob.name.lower().endswith('.jpg') or blob.name.lower().endswith('.jpeg'):
+            if blob.last_modified > lastTime:
+                lastBlob = blob
+                lastTime = blob.last_modified
     return lastBlob
     
 def downloadImage(blobName):
@@ -72,6 +73,8 @@ def downloadImage(blobName):
     else:
         raise ValueError("Failed to encode image.")
  
+
+
 
 #blobname = getmostrecentblob()
 #imgshape, img_bytes = downloadImage(blobname)
