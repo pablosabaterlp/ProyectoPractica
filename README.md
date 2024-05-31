@@ -12,7 +12,6 @@ Los entregables principales son los siguentes:
    - Nombre
    - Edad
    - Etc.
-3. ~~Crear mapa de calor del espacio~~
 
 ## Arquitectura
 
