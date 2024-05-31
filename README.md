@@ -1,4 +1,4 @@
-![image](https://github.com/pablosabaterlp/ProyectoPractica/assets/157770008/66a66fd1-deba-497f-859b-f0b92c0b8658)<a name="readme-top"></a>
+<a name="readme-top"></a>
 
 ## Sobre el Proyecto
 
