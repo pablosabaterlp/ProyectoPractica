@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+![image](https://github.com/pablosabaterlp/ProyectoPractica/assets/157770008/66a66fd1-deba-497f-859b-f0b92c0b8658)<a name="readme-top"></a>
 
 ## Sobre el Proyecto
 
@@ -51,14 +51,15 @@ Flowchart:
 
 |    Tema       | Tiempo |
 | ------------- | ------------- |
-| Reconocer Caras en Foto | ~~13/5/24 -> 15/5/24~~ |
-| Reconocer Caras en Video | ~~15/5/24 -> 16/5/24~~ |
-| Entrenar modelo para detectar puestos de trabajo | ~~17/5/24 -> 20/5/24~~ |
-| Crear codigo para detectar puestos ocupados usando modelo | ~~17/5/24 -> 22/5/24~~ |
+| Aprender sobre Azure y sacar ideas para proyecto | ~~8/5/24 -> 13/5/24~~ |
+| Crear reconocimiento de caras en foto y video | ~~13/5/24 -> 15/5/24~~ |
+| Entrenar modelo Custom Vision para detectar puestos de trabajo | ~~16/5/24 -> 20/5/24~~ |
+| Crear código para detectar puestos ocupados usando modelo | ~~17/5/24 -> 22/5/24~~ |
 | Implementar utilización del blob storage y function | ~~22/5/24 -> 27/5/24~~ |
-| Visualizar en Power BI| **27/6/24 -> 7/6/24** |
-| EXTRA: Añadir aspecto reconocimiento facial | **Indeterminado** |
-| Testing y Entrenamiento | **13/6/24 -> 17/6/24** |
+| Visualizar en Power BI | ~~27/5/24 -> 7/5/24~~ |
+| Implementar "clustering" para puestos | **4/6/24 -> 10/6/24** |
+| EXTRA: Añadir aspecto reconocimiento facial | **10/6/24 -> 17/6/24** |
+| Testing y Entrenamiento | **17/6/24 -> 19/6/24** |
 | Presentación | **17/6/24 -> 19/6/24** |
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
@@ -95,12 +96,6 @@ El Azure Function del cual este programa depende se creo utilizando Azure Core T
 Para representar los resultados del programa Custom Vision, se eligio usar un mapa de Power BI y Synoptic Design. Este mapa se diseña manualmente y usando Synoptic Design es posible representar data de un archivo Excel. Como se puede ver en el demo de Power BI arriba, el programa sube los resultados del API Custom Vision a un Excel como occupados o libres en base de 0 o 1 (0 es libre). El mapa entonces representa un puesto en verde o rojo dependiendo de la información en el Excel.  
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
-
-
-# Plan 29/5/24:
-* Work on Excel implementation
-* Create presentation
-* Test and Troubleshoot
 
 ## Referencias
 * [Guias de Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
