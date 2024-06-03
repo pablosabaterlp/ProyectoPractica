@@ -68,9 +68,9 @@ Reconocimiento en Fotos (15/5/24)
 
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/866d609e9bd3f5f5792336910f7601ea52951a56/FaceRecognitionAzure/Extra/demo.gif)
 
-Mapa de Oficina (27/5/24
+Mapa de Oficina (27/5/24)
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/c7ccb23e826f95186ccb5b2da5cfe84e92964530/FaceRecognitionAzure/Extra/Mapa%20de%20Oficina.png)
-
+<iframe title="Mapa de Oficina" width="600" height="373.5" src="https://app.powerbi.com/viewr=eyJrIjoiMzNmYTRhMzUtODM5Yi00N2M0LThkNmEtYjc1NDJiNjI1YTk4IiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
 ## Como Utilizar
 ### Instalación
 El programa utiliza las siguentes librerias:
