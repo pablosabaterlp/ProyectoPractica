@@ -83,6 +83,7 @@ El programa utiliza las siguentes librerias:
 * azure.storage.blob
 * azure.cognitiveservices
 * scikit-learn
+
 Estas se encuentran en el documento `requirements.txt`, y para installar se puedo copiar lo siguente al terminal:
  ```sh
    pip install -r requirements.txt
