@@ -90,7 +90,7 @@ Estas se encuentran en el documento `requirements.txt`, y para installar se pued
  ```sh
    pip install -r requirements.txt
    ```
-Aparte de las librerias, los documentos de `captureAndUpload.py`, `read_line.py`, ``, y ``, son importantes para la instalación. Sirve tambien copiar los contenidos al documento principal `function_app.py`, pero estan por separados para simplificar el entendimiento.
+Aparte de las librerias, los documentos de `captureAndUpload.py`, y `read_line.py`, son importantes para la instalación. Sirve tambien copiar los contenidos al documento principal `function_app.py`, pero estan por separados para simplificar el entendimiento.
 
 El Azure Function del cual este programa depende se creo utilizando Azure Core Tools, el cual se puede installar en el dispositivo sea necesario siguiendo este [link](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python). Por último, para usar las funciones de Azure se requiere una llave y endpoint para cada uno. El codigo de 'read_line.py' facilita la implementacion de estas llaves de forma que esten guardadas localmente en un documento .txt.
 
