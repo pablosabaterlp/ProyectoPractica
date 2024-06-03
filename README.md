@@ -73,7 +73,7 @@ Flowchart:
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/c7ccb23e826f95186ccb5b2da5cfe84e92964530/FaceRecognitionAzure/Extra/Mapa%20de%20Oficina.png)
 
 ### Power BI Dashboard (31/5/24)
-https://app.powerbi.com/view?r=eyJrIjoiMzNmYTRhMzUtODM5Yi00N2M0LThkNmEtYjc1NDJiNjI1YTk4IiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9
+https://app.powerbi.com/view?r=eyJrIjoiMTUwMWI4ZWQtMDM3Ni00NGFhLThlODYtNDI4YTA2ZGZiMmRmIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9
 
 ## Como Utilizar
 ### Instalación
