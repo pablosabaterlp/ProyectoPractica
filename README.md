@@ -41,7 +41,7 @@ Proceso:
 5. Los puestos se represetan visualmente usando Power BI y el excel subido a un Sharepoint
 
 Flowchart:
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/c9c1ea4ddf6c15e5c97126a8b888e3e0c8130fb2/FaceRecognitionAzure/Extra/dise%C3%B1ofinalfinalfinal.drawio.png)
+![](https://github.com/pablosabaterlp/ProyectoPractica/blob/9a43a92e3e215551bd4426be3499da2850820327/FaceRecognitionAzure/Extra/DataFlowFinal.png)
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
