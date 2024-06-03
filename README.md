@@ -24,8 +24,7 @@ Como componentes se utilizaran los siguentes:
 4. Recursos Azure para el Dataflow:
    - Blob Storage
    - Function
-   - Cosmos DB
-6. Azure Maps para visualizar
+6. Poqer BI para visualizar
 7. Camera
 8. Fotos de Entrenamiento
    - Caras
