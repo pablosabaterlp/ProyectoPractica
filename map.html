@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="300"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Bounding Boxes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            position: relative;
+        }
+        .container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .bounding-box {
+            position: absolute;
+            border: 2px solid rgb(31, 255, 31);
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            pointer-events: none;
+        }
+        .bounding-box:hover + .popup {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="FloorPlanSantander (1).png" alt="Example Image">
+    </div>
+    <div id="popup" class="popup">
+        <div id = "popup" class="popup"></div>
+        <script src ="app.js"></script>
+</body>
+</html>
