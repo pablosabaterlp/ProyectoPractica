@@ -91,12 +91,13 @@ Estas se encuentran en el documento `requirements.txt`, y para installar se pued
  ```sh
    pip install -r requirements.txt
    ```
-Aparte de las librerias, los documentos de `captureAndUpload.py`, y `read_line.py`, son importantes para la instalación. Sirve tambien copiar los contenidos al documento principal `function_app.py`, pero estan por separados para simplificar el entendimiento.
-
 El Azure Function del cual este programa depende se creo utilizando Azure Core Tools, el cual se puede installar en el dispositivo sea necesario siguiendo este [link](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python). Por último, para usar las funciones de Azure se requiere una llave y endpoint para cada uno. El codigo de 'read_line.py' facilita la implementacion de estas llaves de forma que esten guardadas localmente en un documento .txt.
 
-### Implementación Power BI
+### Visualización en Power BI
 Para representar los resultados del programa Custom Vision, se eligio usar un mapa de Power BI y Synoptic Design. Este mapa se diseña manualmente y usando Synoptic Design es posible representar data de un archivo Excel. Como se puede ver en el demo de Power BI arriba, el programa sube los resultados del API Custom Vision a un Excel como occupados o libres en base de 0 o 1 (0 es libre). El mapa entonces representa un puesto en verde o rojo dependiendo de la información en el Excel.  
+
+### Visualización en HTML
+Otra forma que se utilizo para representar los resultados es usando un sitio web local creado usando javascript y HTML. La version gratis de Power BI sirve pero limita la implentacion del programa por ejemplo en la actualizacion automatica del visual, es por eso que se creo lo mismo usando HTML. En este caso, se pueden actualizar automaticamente los puestos sin tener que escribir a un Excel, y entonces quizas por esto sea más optimizado. Estos archivos se encuentran como `app.js` y `map.html`.
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
