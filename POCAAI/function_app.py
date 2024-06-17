@@ -7,11 +7,11 @@ import azure.functions as func
 import logging, openpyxl
 
 # Definir 
-prediction_key = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 2)
-prediction_endpoint = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 3)
-project_id = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 4)
-publish_iteration_name = 'Iteration4'
-file_path = '/Users/pablosabater/Library/CloudStorage/OneDrive-NortheasternUniversity/Other/Mapa de Oficina Practica.xlsx'
+prediction_key = read_line('TXTFILE', 'LINE#')
+prediction_endpoint = read_line('TXTFILE', 'LINENUM')
+project_id = read_line('TXTFILE', 'LINENUM')
+publish_iteration_name = 'ITERATIONNUM'
+file_path = 'FILEPATH'
 
 # Inicializar el modelo de Custom Vision entrenado manualmente 
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
@@ -46,7 +46,7 @@ def test_function(mytimer: func.TimerRequest) -> None:
     if mytimer.past_due:
         logging.info('The timer is past due!')
     
-    imgshape = [1600, 1200]
+    imgshape = ['WIDTH', 'HEIGHT']
     # Para tomar foto y mandarla directamente al blob storage de Azure
     #captureAndUpload()
     lastblob = getmostrecentblob()
@@ -62,7 +62,8 @@ def test_function(mytimer: func.TimerRequest) -> None:
                             5: {'x': 520, 'y': 580},
                             6: {'x': 1150, 'y': 580},
                             7: {'x': 380, 'y': 890},
-                            8: {'x': 1200, 'y': 920}}
+                            8: {'x': 1200, 'y': 920 #Values should be manually changed according to location of the center of desk spaces in the images
+                               }}
 
         # Codigo para actualizar documento de excel y power BI
     desk_statuses = []
@@ -89,7 +90,7 @@ def test_function(mytimer: func.TimerRequest) -> None:
             desk_statuses.append({'Desk': desknum, 'Status': 0})
     print(desk_statuses)
 
-    excel = {1: 'C3', 2:'C4', 3:'C5', 4:'C6', 5:'C7', 6:'C8', 7:'C9', 8:'C10'}
+    excel = {1: 'C3', 2:'C4', 3:'C5', 4:'C6', 5:'C7', 6:'C8', 7:'C9', 8:'C10'} #Should be modified depending on the spreadsheet created
 
     for desk in desk_statuses:
         bidesknum = desk['Desk']
