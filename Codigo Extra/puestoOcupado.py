@@ -8,9 +8,9 @@ import pandas as pd
 import os, time, uuid, requests, cv2
 
 # Definir 
-prediction_key = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 2)
-prediction_endpoint = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 3)
-project_id = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 4)
+prediction_key = read_line('TXTPATH', 'LINENUM')
+prediction_endpoint = read_line('TXTPATH', 'LINENUM')
+project_id = read_line('TXTPATH', 'LINENUM')
 publish_iteration_name = 'Iteration4'
 
 # Inicializar el modelo de Custom Vision entrenado manualmente 
@@ -18,7 +18,7 @@ prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": predict
 predict = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
 
 
-# Funcion para analizar una imagen y representarla en power BI
+# Funcion para analizar una imagen y print resultados
 def analyze_image():
     # Codigo para utilizar foto del internet
     #response = requests.get(file_path)
@@ -88,7 +88,6 @@ def analyze_image():
         unoccupied_avg_prob = 0
         print("No se detectan sitios desocupados.")
     
-    # Codigo para actualizar documento de excel y power BI
     
     
 
