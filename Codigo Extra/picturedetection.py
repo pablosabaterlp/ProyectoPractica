@@ -5,8 +5,8 @@ from PIL import Image
 pygame.init()
 
 # Set Azure Computer Vision API credentials
-KEY = os.environ.get('VISION_KEY')
-ENDPOINT = os.environ.get('VISION_ENDPOINT')
+KEY = read_line('TXTPATH', 'LINENUM')
+ENDPOINT = read_line('TXTPATH', 'LINENUM')
 
 # Image URL
 imageUrl = 'https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-07/family-quotes-2x1-bn-220712-8a4afd.jpg'
