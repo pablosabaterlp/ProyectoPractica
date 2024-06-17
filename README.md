@@ -58,7 +58,7 @@ Flowchart:
 | Implementar utilización del blob storage y function | ~~22/5/24 -> 27/5/24~~ |
 | Visualizar en Power BI | ~~27/5/24 -> 7/5/24~~ |
 | ~~Implementar "clustering" para puestos~~ | ~~4/6/24 -> 10/6/24~~ |
-| Construir HTML como Power BI alternativo | **03/06/24 -> 10/06/24**|
+| Construir HTML como Power BI alternativo | ~~03/06/24 -> 10/06/24~~|
 | ~~EXTRA: Añadir aspecto reconocimiento facial~~ | ~~10/6/24 -> 17/6/24~~ |
 | Testing y Entrenamiento | ~~17/6/24 -> 19/6/24~~ |
 | Presentación | ~~17/6/24~~ |
@@ -107,6 +107,7 @@ Otra forma que se utilizo para representar los resultados es usando un sitio web
 * [Guias de Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
 * [Guia de Azure Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python)
 * [Floor Plan para Power BI](https://www.youtube.com/watch?v=18UJYvl_c8s)
+* [Azure Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python)
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
