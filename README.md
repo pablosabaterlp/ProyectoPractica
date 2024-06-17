@@ -1,5 +1,7 @@
 <a name="readme-top"></a>
-![](https://github.com/pablosabaterlp/ProyectoPractica/blob/ed0d9f0270ed7b5f40ddbe08d3e6fd75f3939a36/Archivos%20Extra/Banco_Santander_Logotipo.svg.png)
+
+<img src="[IMG_LINK](https://github.com/pablosabaterlp/ProyectoPractica/blob/ed0d9f0270ed7b5f40ddbe08d3e6fd75f3939a36/Archivos%20Extra/Banco_Santander_Logotipo.svg.png)" width="50" height="50"/>
+
 ## Sobre el Proyecto
 
 Este proyecto tiene como objectivo principal usar los recursos de Azure Computer Vision y Custom Vision para entrenar un modelo que sea capaz de detectar puestos libres u ocupados en una oficina. Como extension se queria implementar el uso de Face API para crear un sistema de reconocimiento facial en el mismo contexto.
