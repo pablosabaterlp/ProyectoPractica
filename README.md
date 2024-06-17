@@ -59,9 +59,9 @@ Flowchart:
 | Visualizar en Power BI | ~~27/5/24 -> 7/5/24~~ |
 | ~~Implementar "clustering" para puestos~~ | ~~4/6/24 -> 10/6/24~~ |
 | Otro Aspecto TBD| **03/06/24 -> 10/06/24**|
-| EXTRA: Añadir aspecto reconocimiento facial | **10/6/24 -> 17/6/24** |
-| Testing y Entrenamiento | **17/6/24 -> 19/6/24** |
-| Presentación | **17/6/24 -> 19/6/24** |
+| ~~EXTRA: Añadir aspecto reconocimiento facial~~ | ~~10/6/24 -> 17/6/24~~ |
+| Testing y Entrenamiento | ~~17/6/24 -> 19/6/24~~ |
+| Presentación | ~~17/6/24~~ |
 
 <p align="right">(<a href="#readme-top">Subir</a>)</p>
 
