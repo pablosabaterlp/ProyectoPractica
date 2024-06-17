@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<img src="https://github.com/pablosabaterlp/ProyectoPractica/blob/ed0d9f0270ed7b5f40ddbe08d3e6fd75f3939a36/Archivos%20Extra/Banco_Santander_Logotipo.svg.png" width="200" height="50"/>
+<img src="https://github.com/pablosabaterlp/ProyectoPractica/blob/ed0d9f0270ed7b5f40ddbe08d3e6fd75f3939a36/Archivos%20Extra/Banco_Santander_Logotipo.svg.png" width="250" height="75"/>
 
 ## Sobre el Proyecto
 
