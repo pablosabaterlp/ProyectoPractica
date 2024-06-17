@@ -7,17 +7,17 @@ from azure.cognitiveservices.vision.customvision.prediction import CustomVisionP
 from msrest.authentication import ApiKeyCredentials
 
 # Definir 
-prediction_key = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 2)
-prediction_endpoint = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 3)
-project_id = read_line('/Users/pablosabater/Desktop/Santander/Scripts/customVisionKeys.txt', 4)
-publish_iteration_name = 'Iteration4'
+prediction_key = read_line('TXTPATH', 'LINENUM')
+prediction_endpoint = read_line('TXTPATH', 'LINENUM')
+project_id = read_line('TXTPATH', 'LINENUM')
+publish_iteration_name = 'ITERATIONNUM'
 
 # Inicializar el modelo de Custom Vision entrenado manualmente 
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
 predict = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
 
-conn_string = read_line('/Users/pablosabater/Desktop/Santander/Scripts/storageClientConnString.txt', 0)
-conn_name="fotos-camara"
+conn_string = read_line('TXTPATH', 'LINENUM')
+conn_name="CONTAINERNAME"
 
 blob_service_client = BlobServiceClient.from_connection_string(conn_string)
 container_client = blob_service_client.get_container_client(conn_name)
