@@ -2,86 +2,88 @@
 
 <img src="https://github.com/pablosabaterlp/ProyectoPractica/blob/ed0d9f0270ed7b5f40ddbe08d3e6fd75f3939a36/Archivos%20Extra/Banco_Santander_Logotipo.svg.png" width="400" height="75"/>
 
-## Sobre el Proyecto
+## About the Project
 
-Este proyecto tiene como objectivo principal usar los recursos de Azure Computer Vision y Custom Vision para entrenar un modelo que sea capaz de detectar puestos libres u ocupados en una oficina. Como extension se queria implementar el uso de Face API para crear un sistema de reconocimiento facial en el mismo contexto.
+The main goal of this project is to use Azure Computer Vision and Custom Vision resources to train a model capable of detecting free or occupied workstations in an office. Additionally, the project aims to implement Face API to create a facial recognition system in the same context.
 
-## Entregables
+## Deliverables
 
-Los entregables principales son los siguentes:
-1. Detectar puestos libres/crear un mapa
-2. Identificar personas
-   - Nombre
-   - Edad
+The main deliverables are as follows:
+1. Detect free workstations/create a map
+2. Identify people
+   - Name
+   - Age
    - Etc.
 
-## Arquitectura
+## Architecture
 
-Como componentes se utilizaran los siguentes:
+The components used in this project include:
 1. Visual Studio Code/Python
-2. Recursos Azure Gen AI:
+2. Azure Gen AI resources:
    - Computer Vision
    - Custom Vision
    - Face API
-4. Recursos Azure para el Dataflow:
+3. Azure resources for data flow:
    - Blob Storage
-   - Function
-6. Power BI/HTML para visualizar
+   - Functions
+4. Visualization tools:
+   - Power BI
+   - HTML
    - Excel
-   - Javascript
-8. Camara
-9. Fotos de Entrenamiento
-   - Caras
-   - Espacio
+   - JavaScript
+5. Camera
+6. Training Photos
+   - Faces
+   - Workspace
 
-<p align="right">(<a href="#readme-top">Subir</a>)</p>
+<p align="right">(<a href="#readme-top">Back to Top</a>)</p>
 
-## Diseño
-Proceso:
-1. Cada 5 minutos, la cámara toma una foto (JPEG, PNG) y la sube un Azure Blob Storage directamente
-2. El blob storage provoca una function de Azure
-3. La funcion llama a un contenedor con el API de Custom Vision y Face para obtener información sobre la persona y los puestos ocupados y desocupados
-4. Los datos se envian a un Cosmos DB y el estado de los puestos se actualiza en un excel
-5. Los puestos se represetan visualmente usando Power BI y el excel subido a un Sharepoint
+## Design
+Process:
+1. Every 5 minutes, the camera captures a photo (JPEG, PNG) and directly uploads it to Azure Blob Storage.
+2. The blob storage triggers an Azure Function.
+3. The function calls a container with the Custom Vision and Face APIs to gather information about the person and the occupied or unoccupied workstations.
+4. The data is sent to a Cosmos DB, and the workstation statuses are updated in an Excel file.
+5. The workstations are visually represented using Power BI and the Excel file uploaded to SharePoint.
 
 Flowchart:
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/9a43a92e3e215551bd4426be3499da2850820327/FaceRecognitionAzure/Extra/DataFlowFinal.png)
 
-<p align="right">(<a href="#readme-top">Subir</a>)</p>
+<p align="right">(<a href="#readme-top">Back to Top</a>)</p>
 
-## Resumen Avance
+## Progress Summary
 
-|    Tema       | Tiempo |
-| ------------- | ------------- |
-| Aprender sobre Azure y sacar ideas para proyecto | ~~8/5/24 -> 13/5/24~~ |
-| Crear reconocimiento de caras en foto y video | ~~13/5/24 -> 15/5/24~~ |
-| Entrenar modelo Custom Vision para detectar puestos de trabajo | ~~16/5/24 -> 20/5/24~~ |
-| Crear código para detectar puestos ocupados usando modelo | ~~17/5/24 -> 22/5/24~~ |
-| Implementar utilización del blob storage y function | ~~22/5/24 -> 27/5/24~~ |
-| Visualizar en Power BI | ~~27/5/24 -> 7/5/24~~ |
-| ~~Implementar "clustering" para puestos~~ | ~~4/6/24 -> 10/6/24~~ |
-| Construir HTML como Power BI alternativo | ~~03/06/24 -> 10/06/24~~|
-| ~~EXTRA: Añadir aspecto reconocimiento facial~~ | ~~10/6/24 -> 17/6/24~~ |
-| Testing y Entrenamiento | ~~17/6/24 -> 19/6/24~~ |
-| Presentación | ~~17/6/24~~ |
+|    Task       | Timeline |
+| ------------- | -------- |
+| Learning Azure and brainstorming project ideas | ~~8/5/24 -> 13/5/24~~ |
+| Creating facial recognition for photos and videos | ~~13/5/24 -> 15/5/24~~ |
+| Training a Custom Vision model to detect workstations | ~~16/5/24 -> 20/5/24~~ |
+| Coding to detect occupied workstations using the model | ~~17/5/24 -> 22/5/24~~ |
+| Implementing Blob Storage and Azure Functions | ~~22/5/24 -> 27/5/24~~ |
+| Visualizing in Power BI | ~~27/5/24 -> 7/5/24~~ |
+| ~~Implementing "clustering" for workstations~~ | ~~4/6/24 -> 10/6/24~~ |
+| Building HTML as a Power BI alternative | ~~03/06/24 -> 10/06/24~~|
+| ~~EXTRA: Adding facial recognition features~~ | ~~10/6/24 -> 17/6/24~~ |
+| Testing and training | ~~17/6/24 -> 19/6/24~~ |
+| Presentation | ~~17/6/24~~ |
 
-<p align="right">(<a href="#readme-top">Subir</a>)</p>
+<p align="right">(<a href="#readme-top">Back to Top</a>)</p>
 
 ## Demo
 
-### Reconocimiento en Fotos (15/5/24)
+### Photo Recognition (15/5/24)
 
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/866d609e9bd3f5f5792336910f7601ea52951a56/FaceRecognitionAzure/Extra/demo.gif)
 
-### Mapa de Oficina (27/5/24)
+### Office Map (27/5/24)
 ![](https://github.com/pablosabaterlp/ProyectoPractica/blob/c7ccb23e826f95186ccb5b2da5cfe84e92964530/FaceRecognitionAzure/Extra/Mapa%20de%20Oficina.png)
 
 ### Power BI Dashboard (31/5/24)
 https://app.powerbi.com/view?r=eyJrIjoiMTUwMWI4ZWQtMDM3Ni00NGFhLThlODYtNDI4YTA2ZGZiMmRmIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9
 
-## Como Utilizar
-### Instalación
-El programa utiliza las siguentes librerias:
+## How to Use
+### Installation
+The program uses the following libraries:
 * azure-functions
 * msrest.authentication
 * numpy
@@ -91,27 +93,28 @@ El programa utiliza las siguentes librerias:
 * azure.cognitiveservices
 * scikit-learn
 
-Estas se encuentran en el documento `requirements.txt`, y para installar se puedo copiar lo siguente al terminal:
+These are listed in the `requirements.txt` file, and you can install them by running the following in your terminal:
  ```sh
    pip install -r requirements.txt
    ```
-El Azure Function del cual este programa depende se creo utilizando Azure Core Tools, el cual se puede installar en el dispositivo sea necesario siguiendo este [link](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python). Por último, para usar las funciones de Azure se requiere una llave y endpoint para cada uno. El codigo de 'read_line.py' facilita la implementacion de estas llaves de forma que esten guardadas localmente en un documento .txt.
+The Azure Function this program depends on was created using Azure Core Tools, which can be installed on the device if necessary by following this [link](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python). 
+Lastly, using Azure's features requires a key and endpoint for each service. The 'read_line.py' script facilitates the implementation of these keys by storing them locally in a .txt file.
 
-### Visualización en Power BI
-Para representar los resultados del programa Custom Vision, se eligio usar un mapa de Power BI y Synoptic Design. Este mapa se diseña manualmente y usando Synoptic Design es posible representar data de un archivo Excel. Como se puede ver en el demo de Power BI arriba, el programa sube los resultados del API Custom Vision a un Excel como occupados o libres en base de 0 o 1 (0 es libre). El mapa entonces representa un puesto en verde o rojo dependiendo de la información en el Excel.  
+### Visualization in Power BI
+To represent the results of the Custom Vision program, a Power BI map using Synoptic Design was chosen. This map is designed manually, and Synoptic Design enables the representation of data from an Excel file. As shown in the Power BI demo above, the program uploads the Custom Vision API results to an Excel file, marking workstations as occupied or free based on 0 or 1 (0 is free). The map then represents a workstation in green or red based on the information in the Excel file.
 
-### Visualización en HTML
-Otra forma que se utilizo para representar los resultados es usando un sitio web local creado usando javascript y HTML. La version gratis de Power BI sirve pero limita la implentacion del programa por ejemplo en la actualizacion automatica del visual, es por eso que se creo lo mismo usando HTML. En este caso, se pueden actualizar automaticamente los puestos sin tener que escribir a un Excel, y entonces quizas por esto sea más optimizado. Estos archivos se encuentran como `app.js` y `map.html`.
+### Visualization in HTML
+Another way to represent the results is by using a local website created with JavaScript and HTML. While the free version of Power BI is functional, it limits the program's implementation, for example, in automatic visual updates. For this reason, the same functionality was recreated using HTML. In this case, workstations can be updated automatically without writing to an Excel file, making this approach potentially more optimized. These files are located as 'app.js' and 'map.html'.
 
-<p align="right">(<a href="#readme-top">Subir</a>)</p>
 
-## Referencias
-* [Guias de Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
-* [Guia de Azure Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python)
-* [Floor Plan para Power BI](https://www.youtube.com/watch?v=18UJYvl_c8s)
+<p align="right">(<a href="#readme-top">Back to Top</a>)</p>
+
+## References
+* [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/)
 * [Azure Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python)
+* [Floor Plan Power BI](https://www.youtube.com/watch?v=18UJYvl_c8s)
 
-<p align="right">(<a href="#readme-top">Subir</a>)</p>
+<p align="right">(<a href="#readme-top">Back to Top</a>)</p>
 
 
 
